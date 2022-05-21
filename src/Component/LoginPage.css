@@ -1,0 +1,126 @@
+body{
+    background-color: #fafafa;
+}
+.loginpage__main {
+    justify-content: center;
+    display: flex;
+    margin-top: 100px;
+    margin-left: -65px;
+}
+.loginpage__logo {
+    width: 175px;
+    margin-top: 40px;
+}
+.loginpage__right{
+    height: 396px;
+    width: 350px;
+    border: 1px solid #dbdbdb;
+    background-color: #FFFFFF;
+    margin-top: 25px;
+    text-align: center;
+}
+.loginpage__login{
+    margin-top: 25px;
+}
+.loginpage__text{
+    width: 258px;
+    height: 36px;
+    margin: 5px;
+    border: 1px solid #dbdbdb;
+    background-color: #fafafa;
+    padding-left: 10px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: 700;
+   
+}
+.login_button{
+    width: 268px;
+    height: 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    border: 1px solid #0395F6;
+    background-color: #0395F6;
+    color: #fafafa;
+    margin-top: 10px;
+
+}
+
+.login_ordiv {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 18px;
+}
+.login_div {
+    width: 97px;
+    height: 0px;
+    margin-top: 10px;
+    border: 0.3px solid #dbdbdb;
+}
+.login_or {
+    margin: 2px 20px;
+    font-weight: bold;
+    color: #8E8E8E;
+    font-size: 13px;
+}
+.login_fb {
+    margin-top: 3px;
+    color: #385185;
+    font-weight: bold;
+    font-size: 14px;
+    display: inline-flex;
+    
+}
+
+.forget_pw {
+    margin-top: 15px;
+    font-size: 12px;
+    color: #385185;
+    font-weight: 500;
+}
+
+.login_signbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 43px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    background-color: white;
+    border: 1px solid #dedede;
+}
+
+.sign_ask{
+    font-size: 14px;
+    margin-right: 5px;
+    font-weight: 500;
+}
+
+.sign_button{
+    color: rgba(var(--d69,0,149,246),1);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.download {
+    text-align: center;
+    align-items: center;
+    width: 352px;
+    
+    
+}
+
+.download_t {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.images {
+    margin-top: 20px;
+    
+}
