@@ -18,13 +18,12 @@ class NavBar extends Component {
       <div>
         <div className="nav_top">
           <Grid container>
-            <Grid item xs={4}>
+            <Grid item xs={2}></Grid>
+            <Grid item xs={5} style={{ display: "flex" }}>
               <img className="nav_logo" src={NavLogo} />
-            </Grid>
-            <Grid item xs={3}>
               <input className="search" text="text" placeholder="검색"></input>
             </Grid>
-            <Grid item xs={3} style={{ display: "flex", marginLeft: "75px" }}>
+            <Grid item xs={4} style={{ display: "flex", marginLeft: "70px" }}>
               <img className="icon" src={home} />
               <img className="icon" src={message} />
               <img className="icon" src={upload} />

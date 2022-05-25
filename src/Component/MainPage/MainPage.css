@@ -1,0 +1,43 @@
+.post {
+    width: 616px;
+    background-color: white;
+    margin-bottom: 24px;
+    border-radius: 3px;
+    border: 1px solid #dbdbdb;
+    margin-left: 72px;
+}
+
+.writer_info {
+    display: flex;
+    width: 546px;
+    height: 32px;
+    background-color: white;
+    padding: 14px 4px 14px 16px;
+    align-items: center;
+}
+.writer_img {
+    width: 32px;
+    height: 32px;
+}
+.writer_id {
+    margin-left: 14px;
+   font-size: 14px;
+   font-weight: 700;
+}
+
+.post_img {
+    width: 614px;
+    height: 614px;
+}
+
+.post_comment {
+    width: 614px;
+    height: 53px;
+    border-top: 1px solid #dbdbdb;
+}
+
+.more{
+    width: 15px;
+    margin: 8px;
+    
+}

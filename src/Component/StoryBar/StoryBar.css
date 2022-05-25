@@ -1,0 +1,50 @@
+
+
+.story_box {
+    display: flex;
+    background-color: #FFFFFF;
+    width: 606px;
+    height: 85px;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    padding: 16px 0px;
+    padding-left: 10px;
+    margin-top: 24px;
+    margin-left: 72px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    margin-bottom: 24px;
+    
+}
+
+::-webkit-scrollbar {
+    display: none;
+    }
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 7px;
+    width: 68px;
+    padding: 0 10px;
+    height: 85px;
+    
+}
+.ID {
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 3px;
+    text-align: center;
+    max-width: 74px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.prof_icon {
+    
+    min-width:54px;
+    min-height:54px;
+    border: 3px solid #de3b8a;
+    
+}
