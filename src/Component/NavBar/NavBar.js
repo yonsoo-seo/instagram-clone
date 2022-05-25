@@ -1,12 +1,13 @@
 import React, { Component } from "react";
 import "./NavBar.css";
 import NavLogo from "/Users/yeonsuseo/Desktop/hello/Git/instagram-clone/insta/src/images/NavLogo.png";
-import { Grid } from "@material-ui/core";
+import { Avatar, Grid } from "@material-ui/core";
 import home from "/Users/yeonsuseo/Desktop/hello/Git/instagram-clone/insta/src/images/home.png";
 import heart from "/Users/yeonsuseo/Desktop/hello/Git/instagram-clone/insta/src/images/like.png";
 import message from "/Users/yeonsuseo/Desktop/hello/Git/instagram-clone/insta/src/images/send.png";
 import upload from "/Users/yeonsuseo/Desktop/hello/Git/instagram-clone/insta/src/images/add.png";
 import find from "/Users/yeonsuseo/Desktop/hello/Git/instagram-clone/insta/src/images/compass.png";
+import profile_img from "/Users/yeonsuseo/Desktop/hello/Git/instagram-clone/insta/src/images/profile.JPG";
 class NavBar extends Component {
   constructor(props) {
     super(props);
@@ -29,6 +30,7 @@ class NavBar extends Component {
               <img className="icon" src={upload} />
               <img className="icon" src={find} />
               <img className="icon" src={heart} />
+              <Avatar className="icon" src={profile_img} />
             </Grid>
           </Grid>
         </div>
