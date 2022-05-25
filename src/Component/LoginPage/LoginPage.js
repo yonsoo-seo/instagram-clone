@@ -7,8 +7,22 @@ import inst_logo from "/Users/yeonsuseo/Desktop/hello/Git/instagram-clone/insta/
 import fb_img from "/Users/yeonsuseo/Desktop/hello/Git/instagram-clone/insta/src/images/fb.png";
 import ios_app from "/Users/yeonsuseo/Desktop/hello/Git/instagram-clone/insta/src/images/app.png";
 import and_app from "/Users/yeonsuseo/Desktop/hello/Git/instagram-clone/insta/src/images/play.png";
+import Login from "../Login/Login";
+import SignUp from "../SignUp/SignUp";
+
 class LoginPage extends Component {
-  state = {};
+  constructor(props) {
+    super(props);
+    this.state = {
+      isLogin: true,
+    };
+  }
+
+  changeLogin = () => {
+    if (this.state.isLogin) this.setState({ isLogin: false });
+    else this.setState({ isLogin: true });
+  };
+
   render() {
     return (
       <div>
@@ -23,18 +37,7 @@ class LoginPage extends Component {
                 <div className="loginpage__right">
                   <img className="loginpage__logo" src={inst_logo} />
                   <div className="loginpage__login">
-                    <input
-                      className="loginpage__text"
-                      type="text"
-                      placeholder="전화번호, 사용자 이름 또는 이메일"
-                    />
-                    <input
-                      className="loginpage__text"
-                      type="password"
-                      placeholder="비밀번호"
-                    />
-                    <button className="login_button">로그인</button>
-
+                    {this.state.isLogin ? <Login /> : <SignUp />}
                     <div className="login_ordiv">
                       <div className="login_div"></div>
                       <div className="login_or">또는</div>
@@ -53,8 +56,24 @@ class LoginPage extends Component {
                   <div className="forget_pw">비밀번호를 잊으셨나요?</div>
                 </div>
                 <div className="login_signbox">
-                  <div className="sign_ask">계정이 없으신가요?</div>
-                  <div className="sign_button">가입하기</div>
+                  {this.state.isLogin ? (
+                    <div className="box">
+                      <div className="sign_ask">계정이 없으신가요?</div>
+                      <span className="sign_button" onClick={this.changeLogin}>
+                        가입하기
+                      </span>
+                    </div>
+                  ) : (
+                    <div className="box">
+                      <div className="login_ask">계정이 있으신가요?</div>
+                      <span
+                        className="sign_login_btn"
+                        onClick={this.changeLogin}
+                      >
+                        로그인
+                      </span>
+                    </div>
+                  )}
                 </div>
 
                 <div className="download">
