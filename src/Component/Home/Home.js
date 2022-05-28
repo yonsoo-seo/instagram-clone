@@ -1,18 +1,17 @@
 import React, { Component } from "react";
-import MainContent from "../MainContent/MainContent";
+import MainContainer from "../MainContainer/MainContainer";
+import MainContent from "../MainContainer/MainContainer";
+
 import NavBar from "../NavBar/NavBar";
+import Post from "../Post/Post";
 import "./Home.css";
 
 class Home extends Component {
-  constructor(props) {
-    super(props);
-  }
-  state = {};
   render() {
     return (
       <div>
         <NavBar />
-        <MainContent />
+        <MainContainer />
       </div>
     );
   }

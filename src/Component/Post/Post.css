@@ -1,0 +1,137 @@
+.post {
+       width: 616px;
+       background-color: white;
+       
+       border-radius: 3px;
+       border: 1px solid #dbdbdb;
+       
+       display: flex;
+       flex-direction: column;
+     
+       margin-bottom: 24px;
+       margin-left: 18px;
+       
+   }
+   
+   .writer_info {
+       display: flex;
+       width: 546px;
+       height: 32px;
+       background-color: white;
+       padding: 14px 4px 14px 16px;
+       align-items: center;
+   }
+   .writer_img {
+       width: 32px;
+       height: 32px;
+   }
+   .writer_id {
+       margin-left: 14px;
+      font-size: 14px;
+      font-weight: 700;
+   }
+   
+   .post_img {
+       width: 614px;
+       height: 614px;
+   }
+   
+   .post_comment {
+       width: 614px;
+       height: 53px;
+       border-top: 1px solid #dbdbdb;
+   }
+   
+   .more{
+       float: right;
+       width: 15px;
+       margin: 8px;
+       margin-left: 450px;
+       margin-top: 10px;
+       
+   }
+   
+   .like_sec {
+       width: 582px;
+       height: 40px;
+       display: flex;
+       padding: 6px 16px 8px 10px;
+       margin-top: 4px;
+   }
+   
+   .btn {
+       width: 24px;
+       height: 24px;
+       padding: 8px;
+       justify-content: center;
+   }
+   
+   .post__text {
+       height: 126px;
+       width: 614px;
+       display: flex;
+       flex-direction: column;
+       padding-left: 18px;
+   }
+   
+   .post__comment{
+       display: flex;
+       width: 582px;
+       height: 40px;
+       border-top: 1px solid rgba(var(--ce3,239,239,239),1);
+       padding: 6px 16px;
+       
+   }
+   
+   .emoji {
+       padding: 6px 16px 8px 0px;
+       width: 27px;
+       height: 27px;
+   }
+   
+   .comment_here {
+       vertical-align: middle;
+       width: 514px;
+       height: 18px;
+       border: none;
+       font-size: 14px;
+       text-shadow: none;
+       margin-top: 10px;
+       text-transform: none;
+       text-align: start;
+       outline: none;
+       padding: 0px;
+       
+   }
+   
+   .comment_up {
+       display: block;
+       color: rgba(var(--d69,0,149,246),1);
+       font-size: 14px;
+       font-weight: 700;
+       margin-top: 11px;
+       
+   }
+   
+   .like_num {
+       font-weight: 600;
+       font-size: 14px;
+       margin-bottom: 10px;
+       
+   }
+   .user_comment {
+          font-size: 14px;
+          font-weight: 400 ;
+          display: flex;
+          margin: 2px 0;
+          
+   }
+   .cmt_usr {
+          font-size: 14px;
+          font-weight: 700;
+          padding-right: 4px;
+   }
+   .cmt_txt {
+       font-size: 14px;
+       
+}

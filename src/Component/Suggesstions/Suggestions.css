@@ -1,0 +1,49 @@
+.suggestions__container {
+       width: 325px;
+       height: 290px;
+       margin-top: 25px;
+       margin-left: 10px;
+   }
+   .suggestions__header {
+       font-weight: bold;
+       color: #8e8e8e;
+   }
+   .suggestions__body {
+       height: 256px;
+       height: 290px;
+       margin-top: 10px;
+       margin-left: 6px;
+   }
+   .suggestions__friends {
+       display: flex;
+       padding: 6px 0px;
+       align-items: center;
+   }
+   .suggestions__image {
+       max-width: 32px;
+       max-height: 32px;
+   }
+   .suggestions__username{
+       font-weight: 600;
+       margin-bottom: 3px;
+       font-size: 14px;
+       width: 214px;
+   }
+   .sug_text {
+          font-size: 14px;
+          font-weight: 700;
+   }
+
+   .suggestions__ment {
+          font-size: 12px;
+          color: rgba(var(--f52,142,142,142),1);
+          font-weight: 700;
+   }
+   .sug_follow {
+          font-size: 12px;
+          width: 32px;
+          color:rgba(var(--d69,0,149,246),1)
+          ;
+          font-weight: 740;
+          
+   }

@@ -1,31 +1,46 @@
 import { Grid } from "@material-ui/core";
 import React, { Component } from "react";
-import MainPage from "../MainPage/MainPage";
+import InfoSection from "../InfoSection/InfoSection";
+import Post from "../Post/Post";
 import StoryBar from "../StoryBar/StoryBar";
+import Suggestions from "../Suggesstions/Suggestions";
 
 class MainContent extends Component {
   constructor(props) {
     super(props);
+    this.state = {
+      postArray: [],
+    };
   }
-  state = {};
+
+  componentDidMount() {
+    this.getPost();
+  }
+
+  getPost = () => {
+    let data = [
+      {
+        postID: "123456",
+        userName: "pzxcvasd",
+        postImageURL:
+          "https://i.guim.co.uk/img/media/64c687b75da57f3e82d9fcfd019a4103ce81db15/0_143_4284_2570/master/4284.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=b03ca8f1265401501deb033c7481740e",
+        timeStampe: "12345",
+        likes: "1234",
+      },
+    ];
+    this.setState({ postArray: data });
+  };
   render() {
     return (
       <div>
-        <Grid container>
-          <Grid item xs={2}></Grid>
-          <Grid item xs={6}>
-            <div>
-              <StoryBar />
-              <MainPage />
-            </div>
-          </Grid>
-          <Grid item xs={2}>
-            sdf
-          </Grid>
-          <Grid item xs={2}>
-            sdf
-          </Grid>
-        </Grid>
+        {this.state.postArray.map((item, index) => (
+          <Post
+            id={item.postID}
+            userName={item.userName}
+            postImage={item.postImageURL}
+            likes={item.likes}
+          />
+        ))}
       </div>
     );
   }

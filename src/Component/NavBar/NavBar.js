@@ -1,3 +1,5 @@
+/* eslint-disable no-useless-constructor */
+/* eslint-disable jsx-a11y/alt-text */
 import React, { Component } from "react";
 import "./NavBar.css";
 import NavLogo from "/Users/yeonsuseo/Desktop/hello/Git/instagram-clone/insta/src/images/NavLogo.png";
@@ -8,11 +10,13 @@ import message from "/Users/yeonsuseo/Desktop/hello/Git/instagram-clone/insta/sr
 import upload from "/Users/yeonsuseo/Desktop/hello/Git/instagram-clone/insta/src/images/add.png";
 import find from "/Users/yeonsuseo/Desktop/hello/Git/instagram-clone/insta/src/images/compass.png";
 import profile_img from "/Users/yeonsuseo/Desktop/hello/Git/instagram-clone/insta/src/images/profile.JPG";
+import MainContent from "../MainContent/MainContent";
 class NavBar extends Component {
   constructor(props) {
     super(props);
   }
   state = {};
+
   render() {
     return (
       <div>
@@ -26,7 +30,13 @@ class NavBar extends Component {
             <Grid item xs={4} style={{ display: "flex", marginLeft: "70px" }}>
               <img className="icon" src={home} />
               <img className="icon" src={message} />
-              <img className="icon" src={upload} />
+              <div className="upload_post">
+                <label for="file-upload">
+                  <img className="icon" src={upload} />
+                </label>
+                <input onChange={this.upload} id="file-upload" type="file" />
+              </div>
+
               <img className="icon" src={find} />
               <img className="icon" src={heart} />
               <Avatar className="icon" src={profile_img} />

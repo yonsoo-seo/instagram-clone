@@ -17,7 +17,8 @@ class StoryBar extends Component {
     let data = [
       {
         username: "yonsoo.seo",
-        imageURL: "../../images/dog.jpg",
+        imageURL:
+          "https://i2-prod.somersetlive.co.uk/incoming/article3236026.ece/ALTERNATES/s1200c/0_JS189764871.jpg",
       },
       {
         username: "pzxcvasd",
@@ -64,15 +65,13 @@ class StoryBar extends Component {
   };
   render() {
     return (
-      <div>
-        <div className="story_box">
-          {this.state.storyList.map((item, index) => (
-            <div className="profile">
-              <Avatar className="prof_icon" src={dog} />
-              <div className="ID">{item.username}</div>
-            </div>
-          ))}
-        </div>
+      <div className="story_box">
+        {this.state.storyList.map((item, index) => (
+          <div className="profile">
+            <Avatar className="prof_icon" src={item.imageURL} />
+            <div className="ID">{item.username}</div>
+          </div>
+        ))}
       </div>
     );
   }
