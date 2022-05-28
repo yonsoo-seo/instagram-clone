@@ -19,15 +19,15 @@ body {
 }
 .search{
     font-weight: 500;
-    width: 250px;
+    width: 225px;
     height: 34px;
     border: 1px solid rgba(var(--bb2,239,239,239),1);
     background-color: rgba(var(--bb2,239,239,239),1);
     font-size: 16px;
     border-radius: 8px;
-    padding: 0 16px;
-    margin-left: 240px;
+    padding: 0 20px;
     margin-top: 12px;
+    margin-left: 232px;
     color: black;
 }
 
@@ -40,4 +40,9 @@ body {
 }
 .upload_post > input {
     display: none;
+}
+
+.logo_con {
+    display: flex;
+    margin-left: 50px;
 }

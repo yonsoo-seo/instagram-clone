@@ -2,11 +2,11 @@
 import React, { Component } from "react";
 import "./LoginPage.css";
 import Grid from "@material-ui/core/Grid";
-import inst_image from "/../../images/9364675fb26a.svg";
-import inst_logo from "/../../images/logoinsta.png";
-import fb_img from "/../../images/fb.png";
-import ios_app from "/../../images/app.png";
-import and_app from "/../../images/play.png";
+import inst_image from "../../images/9364675fb26a.svg";
+import inst_logo from "../../images/logoinsta.png";
+import fb_img from "../../images/fb.png";
+import ios_app from "../../images/app.png";
+import and_app from "../../images/play.png";
 import Login from "../Login/Login";
 import SignUp from "../SignUp/SignUp";
 

@@ -17,7 +17,7 @@ class MainContainer extends Component {
         <Grid container>
           <Grid item xs={2}></Grid>
 
-          <div style={{ width: "650px" }}>
+          <div style={{ width: "650px", marginLeft: "50px" }}>
             <StoryBar />
             <MainContent />
           </div>

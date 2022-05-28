@@ -5,10 +5,10 @@ import React, { Component } from "react";
 import "./Post.css";
 import more_img from "../../images/more.png";
 import like_btn from "../../images/like.png";
-import cmt_btn from "../../chat.png";
-import send_btn from "/../../images/send.png";
-import scrap_btn from "/../../images/bookmark.png";
-import emoji from "/../../images/friendly.png";
+import cmt_btn from "../../images/chat.png";
+import send_btn from "../../images/send.png";
+import scrap_btn from "../../images/bookmark.png";
+import emoji from "../../images/friendly.png";
 
 class Post extends Component {
   constructor(props) {
