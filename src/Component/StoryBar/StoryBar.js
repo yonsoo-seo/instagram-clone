@@ -1,7 +1,6 @@
 import { Avatar } from "@material-ui/core";
 import React, { Component } from "react";
 import "./StoryBar.css";
-import dog from "/Users/yeonsuseo/Desktop/hello/Git/instagram-clone/insta/src/images/dog.jpg";
 
 class StoryBar extends Component {
   constructor(props) {

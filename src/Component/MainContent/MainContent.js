@@ -1,9 +1,5 @@
-import { Grid } from "@material-ui/core";
 import React, { Component } from "react";
-import InfoSection from "../InfoSection/InfoSection";
 import Post from "../Post/Post";
-import StoryBar from "../StoryBar/StoryBar";
-import Suggestions from "../Suggesstions/Suggestions";
 
 class MainContent extends Component {
   constructor(props) {
@@ -33,6 +29,30 @@ class MainContent extends Component {
   render() {
     return (
       <div>
+        {this.state.postArray.map((item, index) => (
+          <Post
+            id={item.postID}
+            userName={item.userName}
+            postImage={item.postImageURL}
+            likes={item.likes}
+          />
+        ))}
+        {this.state.postArray.map((item, index) => (
+          <Post
+            id={item.postID}
+            userName={item.userName}
+            postImage={item.postImageURL}
+            likes={item.likes}
+          />
+        ))}
+        {this.state.postArray.map((item, index) => (
+          <Post
+            id={item.postID}
+            userName={item.userName}
+            postImage={item.postImageURL}
+            likes={item.likes}
+          />
+        ))}
         {this.state.postArray.map((item, index) => (
           <Post
             id={item.postID}

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./InfoSection.css";
-import info_img from "/Users/yeonsuseo/Desktop/hello/Git/instagram-clone/insta/src/images/profile.JPG";
+import info_img from "../../images/profile.JPG";
 import { Avatar } from "@material-ui/core";
 
 class InfoSection extends Component {

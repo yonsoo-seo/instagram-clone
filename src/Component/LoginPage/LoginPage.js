@@ -2,11 +2,11 @@
 import React, { Component } from "react";
 import "./LoginPage.css";
 import Grid from "@material-ui/core/Grid";
-import inst_image from "/Users/yeonsuseo/Desktop/hello/Git/instagram-clone/insta/src/images/9364675fb26a.svg";
-import inst_logo from "/Users/yeonsuseo/Desktop/hello/Git/instagram-clone/insta/src/images/logoinsta.png";
-import fb_img from "/Users/yeonsuseo/Desktop/hello/Git/instagram-clone/insta/src/images/fb.png";
-import ios_app from "/Users/yeonsuseo/Desktop/hello/Git/instagram-clone/insta/src/images/app.png";
-import and_app from "/Users/yeonsuseo/Desktop/hello/Git/instagram-clone/insta/src/images/play.png";
+import inst_image from "/../../images/9364675fb26a.svg";
+import inst_logo from "/../../images/logoinsta.png";
+import fb_img from "/../../images/fb.png";
+import ios_app from "/../../images/app.png";
+import and_app from "/../../images/play.png";
 import Login from "../Login/Login";
 import SignUp from "../SignUp/SignUp";
 

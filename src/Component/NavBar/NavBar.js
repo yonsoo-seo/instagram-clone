@@ -2,15 +2,15 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React, { Component } from "react";
 import "./NavBar.css";
-import NavLogo from "/Users/yeonsuseo/Desktop/hello/Git/instagram-clone/insta/src/images/NavLogo.png";
+import NavLogo from "/../../images/NavLogo.png";
 import { Avatar, Grid } from "@material-ui/core";
-import home from "/Users/yeonsuseo/Desktop/hello/Git/instagram-clone/insta/src/images/home.png";
-import heart from "/Users/yeonsuseo/Desktop/hello/Git/instagram-clone/insta/src/images/like.png";
-import message from "/Users/yeonsuseo/Desktop/hello/Git/instagram-clone/insta/src/images/send.png";
-import upload from "/Users/yeonsuseo/Desktop/hello/Git/instagram-clone/insta/src/images/add.png";
-import find from "/Users/yeonsuseo/Desktop/hello/Git/instagram-clone/insta/src/images/compass.png";
-import profile_img from "/Users/yeonsuseo/Desktop/hello/Git/instagram-clone/insta/src/images/profile.JPG";
-import MainContent from "../MainContent/MainContent";
+import home from "/../../images/home.png";
+import heart from "/../../images/like.png";
+import message from "/../../images/send.png";
+import upload from "/../../images/add.png";
+import find from "/../../images/compass.png";
+import profile_img from "/../../images/profile.JPG";
+
 class NavBar extends Component {
   constructor(props) {
     super(props);

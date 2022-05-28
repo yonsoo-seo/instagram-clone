@@ -3,14 +3,12 @@
 import { Avatar } from "@material-ui/core";
 import React, { Component } from "react";
 import "./Post.css";
-import writer_img from "/Users/yeonsuseo/Desktop/hello/Git/instagram-clone/insta/src/images/dog.jpg";
-import more_img from "/Users/yeonsuseo/Desktop/hello/Git/instagram-clone/insta/src/images/more.png";
-import post_img from "/Users/yeonsuseo/Desktop/hello/Git/instagram-clone/insta/src/images/poster.jpg";
-import like_btn from "/Users/yeonsuseo/Desktop/hello/Git/instagram-clone/insta/src/images/like.png";
-import cmt_btn from "/Users/yeonsuseo/Desktop/hello/Git/instagram-clone/insta/src/images/chat.png";
-import send_btn from "/Users/yeonsuseo/Desktop/hello/Git/instagram-clone/insta/src/images/send.png";
-import scrap_btn from "/Users/yeonsuseo/Desktop/hello/Git/instagram-clone/insta/src/images/bookmark.png";
-import emoji from "/Users/yeonsuseo/Desktop/hello/Git/instagram-clone/insta/src/images/friendly.png";
+import more_img from "../../images/more.png";
+import like_btn from "../../images/like.png";
+import cmt_btn from "../../chat.png";
+import send_btn from "/../../images/send.png";
+import scrap_btn from "/../../images/bookmark.png";
+import emoji from "/../../images/friendly.png";
 
 class Post extends Component {
   constructor(props) {
