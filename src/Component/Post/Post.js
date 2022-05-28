@@ -23,29 +23,61 @@ class Post extends Component {
   }
 
   getComments = () => {
-    let data = [
-      {
-        username: "pzxcvasd",
-        commentID: "1234",
-        timeStamp: "12356",
-        description: "Comment1",
-      },
-      {
-        username: "hwa_e.ewha",
-        commentID: "1234",
-        timeStamp: "12356",
-        description: "Clone-coding",
-      },
-      {
-        username: "yonsoo-seo",
-        commentID: "1234",
-        timeStamp: "12356",
-        description: "GithubID",
-      },
-    ];
+    // let data = [
+    //   {
+    //     username: "pzxcvasd",
+    //     commentID: "1234",
+    //     timeStamp: "12356",
+    //     description: "Comment1",
+    //   },
+    //   {
+    //     username: "hwa_e.ewha",
+    //     commentID: "1234",
+    //     timeStamp: "12356",
+    //     description: "Clone-coding",
+    //   },
+    //   {
+    //     username: "yonsoo-seo",
+    //     commentID: "1234",
+    //     timeStamp: "12356",
+    //     description: "GithubID",
+    //   },
+    // ];
 
-    this.setState({ commentList: data });
+    fetch("http://localhost:3001/comments/" + this.props.id)
+      .then((response) => response.json())
+      .then((data) => {
+        this.setState({ commentList: data });
+      });
   };
+  submitComments = (event) => {
+    if (event.key == "Enter") {
+      let comment = event.currentTarget.value;
+      if (comment != null || comment != undefined) {
+        let payload = {
+          commentId: Math.floor(Math.random() * 1000000).toString(),
+          userId: JSON.parse(localStorage.getItem("users")).uid,
+          postId: this.props.id,
+          timeStamp: new Date().getTime(),
+          comment: comment,
+        };
+
+        const requestOptions = {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload),
+        };
+
+        fetch("http://localhost:3001/comments", requestOptions)
+          .then((response) => response.json())
+          .then((data) => {
+            this.getComments();
+          })
+          .catch((error) => {});
+      }
+    }
+  };
+
   render() {
     return (
       //       <div>
@@ -79,12 +111,16 @@ class Post extends Component {
 
         <div className="post__text">
           <div className="like_num">{this.props.likes}명이 좋아합니다</div>
-          {this.state.commentList.map((item, index) => (
-            <div className="user_comment">
-              <div className="cmt_usr">{item.username}</div>
-              <div className="cmt_txt">{item.description}</div>
-            </div>
-          ))}
+          {this.state.commentList.map((item, index) =>
+            index < 4 ? (
+              <div className="user_comment">
+                <div className="cmt_usr">{item.username}</div>
+                <div className="cmt_txt">{item.description}</div>
+              </div>
+            ) : (
+              <span></span>
+            )
+          )}
         </div>
 
         <div className="post__comment">
