@@ -5,13 +5,13 @@ import LoginPage from "./Component/LoginPage/LoginPage";
 function App() {
   return (
     <div className="App">
-      {/* {localStorage.getItem("users") == undefined ||
+      {localStorage.getItem("users") == undefined ||
       localStorage.getItem("users") == null ? (
         <LoginPage />
       ) : (
         <Home />
-      )} */}
-      <Home />
+      )}
+   
     </div>
   );
 }
