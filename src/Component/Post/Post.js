@@ -44,7 +44,7 @@ class Post extends Component {
     //   },
     // ];
 
-    fetch("http://localhost:3001/comments/" + this.props.id)
+    fetch("http://localhost:8080/comments/" + this.props.id)
       .then((response) => response.json())
       .then((data) => {
         this.setState({ commentList: data });
@@ -68,7 +68,7 @@ class Post extends Component {
           body: JSON.stringify(payload),
         };
 
-        fetch("http://localhost:3001/comments", requestOptions)
+        fetch("http://localhost:8080/comments", requestOptions)
           .then((response) => response.json())
           .then((data) => {
             this.getComments();
@@ -85,7 +85,7 @@ class Post extends Component {
         <div className="writer_info">
           <Avatar
             className="writer_img"
-            src={this.props.profileImage}
+            src=""
             style={{ width: "32px", height: "32px" }}
           />
           <div className="writer_id">{this.props.userName}</div>
@@ -115,7 +115,7 @@ class Post extends Component {
             index < 4 ? (
               <div className="user_comment">
                 <div className="cmt_usr">{item.username}</div>
-                <div className="cmt_txt">{item.description}</div>
+                <div className="cmt_txt">{item.comment}</div>
               </div>
             ) : (
               <span></span>
@@ -128,6 +128,7 @@ class Post extends Component {
           <input
             className="comment_here"
             type="text"
+            onKeyPress={this.submitComments}
             placeholder="댓글 달기..."
           />
           <div className="comment_up">게시</div>

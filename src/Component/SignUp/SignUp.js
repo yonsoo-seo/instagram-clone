@@ -32,7 +32,7 @@ class SignUp extends Component {
           body: JSON.stringify(payload),
         };
 
-        fetch("http://localhost:3001/users", requestOptions)
+        fetch("http://localhost:8080/users", requestOptions)
           .then((response) => response.json())
           .then((data) => {
             localStorage.setItem("users", JSON.stringify(user));
@@ -82,7 +82,9 @@ class SignUp extends Component {
           type="password"
           placeholder="비밀번호"
         />
-        <button className="login_button">가입</button>
+        <button className="login_button" onClick={this.newSignUp}>
+          가입
+        </button>
       </div>
     );
   }

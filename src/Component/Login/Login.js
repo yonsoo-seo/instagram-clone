@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "../LoginPage/LoginPage.css";
 import { storage, auth } from "../firebase";
 
-class SignIn extends Component {
+class LogIn extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -47,10 +47,12 @@ class SignIn extends Component {
           type="password"
           placeholder="비밀번호"
         />
-        <button className="login_button">로그인</button>
+        <button className="login_button" onClick={this.login}>
+          로그인
+        </button>
       </div>
     );
   }
 }
 
-export default SignIn;
+export default LogIn;

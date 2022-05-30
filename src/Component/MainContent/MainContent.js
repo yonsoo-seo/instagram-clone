@@ -7,6 +7,7 @@ class MainContent extends Component {
     super(props);
     this.state = {
       postArray: [],
+      progressBar: "",
     };
   }
 
@@ -27,7 +28,7 @@ class MainContent extends Component {
     //   },
     // ];
 
-    fetch("http://localhost:3001/post")
+    fetch("http://localhost:8080/post")
       .then((response) => response.json())
       .then((data) => {
         thisContext.setState({ postArray: data });
@@ -65,7 +66,7 @@ class MainContent extends Component {
             body: JSON.stringify(payload),
           };
 
-          fetch("http://localhost:3001/post", requestOptions)
+          fetch("http://localhost:8080/post", requestOptions)
             .then((response) => response.json())
             .then((data) => {
               console.log(data);
@@ -84,32 +85,8 @@ class MainContent extends Component {
           <Post
             id={item.postID}
             userName={item.userName}
-            postImage={item.postImageURL}
-            likes={item.likes}
-          />
-        ))}
-        {this.state.postArray.map((item, index) => (
-          <Post
-            id={item.postID}
-            userName={item.userName}
-            postImage={item.postImageURL}
-            likes={item.likes}
-          />
-        ))}
-        {this.state.postArray.map((item, index) => (
-          <Post
-            id={item.postID}
-            userName={item.userName}
-            postImage={item.postImageURL}
-            likes={item.likes}
-          />
-        ))}
-        {this.state.postArray.map((item, index) => (
-          <Post
-            id={item.postID}
-            userName={item.userName}
-            postImage={item.postImageURL}
-            likes={item.likes}
+            postImage={item.postPath}
+            likes={item.likeCount}
           />
         ))}
       </div>
