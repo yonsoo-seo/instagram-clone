@@ -11,6 +11,10 @@ function App() {
       ) : (
         <Home />
       )}
+<<<<<<< HEAD
+=======
+   
+>>>>>>> fe65c9ed830e39ba33dded68a5aee3410bdd09f4
     </div>
   );
 }
